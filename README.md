@@ -42,7 +42,7 @@ Concepts learned:
 
 ## 🔶 Diagram
 
-<img src="./diagrama.png" alt="Application Diagram" />
+<img src="./diagram.png" alt="Application Diagram" />
 
 ## 🚀 How to run
 
