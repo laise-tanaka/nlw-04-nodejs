@@ -1,4 +1,4 @@
-<h1 align="center">NPS-NLW</h1>
+<h1 align="center">NLW 04 - NodeJS</h1>
 
 <p align="center">
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
