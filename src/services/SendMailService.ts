@@ -7,7 +7,7 @@ class SendMailService {
     private client: Transporter;
 
     constructor(){
-        nodemailer.createTestAccount().then(account => {
+        nodemailer.createTestAccount().then((account) => {
             const transporter = nodemailer.createTransport({
                 host: account.smtp.host,
                 port: account.smtp.port,
@@ -17,18 +17,17 @@ class SendMailService {
                     pass: account.pass
                 }
             });
-
             this.client = transporter;
         });
     }
 
     async execute(to: string, subject: string, variables: object, path: string){
         
-        const templateFileContent = fs.readFileSync(path).toString("utf8");
+        const templateFileContent = fs.readFileSync(path).toString('utf8');
 
-        const mailTemaplteParse = handlebars.compile(templateFileContent);
+        const mailTemplateParse = handlebars.compile(templateFileContent);
 
-        const html = mailTemaplteParse({variables})
+        const html = mailTemplateParse(variables);
 
         const message = await this.client.sendMail({
             to, 
