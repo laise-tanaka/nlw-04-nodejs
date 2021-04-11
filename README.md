@@ -32,7 +32,7 @@ The formula for calculating NPS is: % promoting customers (grades 9 and 10) - % 
 
 The application registrates users, surveys and send e-mail for users to respond the satisfaction surveys and with the chosen value is possible to calculate the NPS.
 
-This project was developed during the the fourth edition of NLW (Next Level Week) from RocketSeat. 
+This project was developed during the fourth edition of NLW (Next Level Week) from RocketSeat. 
 Concepts learned: 
 - What is an API
 - How to start a project using Typescript and Express for route management
